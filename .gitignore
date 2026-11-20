@@ -1,0 +1,8 @@
+/vendor/
+/node_modules/
+/var/cache/*
+/var/compiled/*
+!/var/cache/.gitkeep
+!/var/compiled/.gitkeep
+.env
+.idea/
