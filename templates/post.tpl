@@ -13,7 +13,7 @@
         </div>
         <img class="post__image" src="{$post.image}" alt="{$post.title}">
         <p class="lead">{$post.description}</p>
-        <div class="post__content">{$post.content|nl2br}</div>
+        <div class="post__content">{$post.content|escape:'html'|nl2br nofilter}</div>
     </article>
 
     {if $similar}
