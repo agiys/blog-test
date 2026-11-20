@@ -1,0 +1,63 @@
+@use 'variables' as *;
+
+.header {
+  background: $color-surface;
+  border-bottom: 1px solid $color-border;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    height: 64px;
+  }
+
+  &__logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: $color-text;
+  }
+}
+
+.footer {
+  padding: 24px 0;
+  font-size: 14px;
+  color: $color-muted;
+  border-top: 1px solid $color-border;
+  background: $color-surface;
+}
+
+.grid {
+  display: grid;
+  gap: $gap;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $breakpoint-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.section {
+  margin-bottom: 48px;
+
+  &__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    margin: 0 0 4px;
+    font-size: 24px;
+  }
+
+  &__text {
+    margin: 0;
+    color: $color-muted;
+  }
+}

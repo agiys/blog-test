@@ -1,0 +1,26 @@
+@use 'variables' as *;
+
+.post {
+  max-width: 820px;
+  margin: 0 auto 56px;
+
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: $color-muted;
+  }
+
+  &__image {
+    width: 100%;
+    margin-bottom: 24px;
+    border-radius: $radius;
+  }
+
+  &__content {
+    font-size: 17px;
+  }
+}
